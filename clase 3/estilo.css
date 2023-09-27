@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,400&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(31, 148, 148);
+    background-image: url(./descarga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    background-color: blue;
+    text-align: center;
+    text-decoration:   solid underline;
+    text-align: center;
+    line-height: 1.9;
+
+    
+    
+
+    font-style: italic;
+    font-size: 200%;
+    font-family: sans-serif;
+    font-weight: 900;
+
+}
+/* 
+h2{
+    background-color: red;
+}
+
+.inicio{
+    background-color: brown;
+}*/
+
+.servicio{
+    background: radial-gradient(circle, blue , yellow);
+} 
+
+.texto-may{
+    text-transform: uppercase;
+}
+/* 
+nav ul li a{
+    background-color: blueviolet;
+    text-transform: uppercase;
+} */
+
+div ul li p{
+    background-color: blue;
+}
+
+#intermedio{
+    background-color: burlywood;
+}
+
+h1{
+    background-color: #84b6f4;
+}
+
+ul li {
+    /* list-style: none; */
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    box-shadow: 12px 12px 12px  rgba(0, 0, 0, .3);
+}
