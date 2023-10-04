@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+    padding: 2rem;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+.section{
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    gap: 5px;
+}
+
+.caja{
+    border: 1px solid green;
+    width: 33%;
+    text-align: center;
+    padding: 2rem 0;
+    height: 300px;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(251, 5, 201);
+    color: black;
+    text-transform: uppercase;
+} 
+
+.img{
+    width: 90px;
+}
+
+.caja1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div{
+    display: flex;
+    gap: 20px;
+} 
+
+
+
+/* Flex Grid */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.galeria{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.item{
+    background-color: violet;
+}
+
+.caja1{
+    background: url(./img/1.jpg) no-repeat center/cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.caja2{
+    background: url(./img/2.avif) no-repeat center/cover;
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+.item:nth-child(3){
+    background: url(./img/3.avif) no-repeat center/cover;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.item:nth-child(4){
+    background: url(./img/4.avif) no-repeat center/cover;
+    grid-area: 2/4/4/5;
+    /* grid-column: 3/5;
+    grid-row: 2/4; */
+}
+
+
+.item:nth-child(5){
+    background: url(./img/5.avif) no-repeat center/cover;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.item:nth-child(6){
+    background: url(./img/6.avif) no-repeat center/cover;
+}
+
+.caja7{
+    background: url(./img/7.avif) no-repeat center/cover;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.caja8{
+    background: url(./img/8.avif) no-repeat center/cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+
+/* 
+Grid-colum y grid-row == grid-area
+grid-colum :columna-inicial/columna-final;
+grid-row: fila-inicial/ fila final;
+
+grid-area: fila/columna/fila/columna;
+*/
