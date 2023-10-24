@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+
+.btn{
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    background:transparent;
+    margin: 0 auto;
+    display: block;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    color: black;
+    background: white;
+}
+
+
+/* Demas cositas */
+
+.p{
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: white;
+}
