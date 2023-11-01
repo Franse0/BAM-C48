@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>clase 11</title>
-  </head>
-  <body>
-     <!-- <button id="btn1" class="btn"  onclick="bajar()"> Bajar </button> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10</title>
+    <link rel="stylesheet" href="./stlye.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> 
 
-    <h1 class="titulo" id="h1" > Hola Soy Un H1</h1>
+    <main>
+        <section class="inicio">
+            <h1>Aprende Javascript Jugando</h1>
+            <div class="inicio-container">
+                <div class="inicio-description">
+                         <span> { </span>
+                       <p> Esta demostrado que la mejor forma de aprender es por repeticion,
+                        por eso con un grupo de estudiantes de programacion decidimos tomarnos 
+                        en serio lo de practicar.
+                    </p>
+                    <span> } </span>
+                </div>
+                <div class="banner">
+                    <h3>Mas de 50 ejercicios para que te vuelvas un experto</h3>
 
-    <!-- <button onclick="cambiarEstiloDelH1()" id="btn" >Saludar</button> -->
+                    <div class="hero">
+                        <p><span>const</span> empezar = "estas listo?"</p>
+                      <form action="">
+                        <label for="true">True</label>
+                        <input type="radio" name="options-inicio">
+                        <label for="false">False</label>
+                        <input type="radio" name="options-inicio"> 
+                        <br>
+                        <button type="submit" class="btn">Comenzar</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- <img src="" id="img" alt="soy una imagen" width=""> --> 
-    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sapiente maxime molestiae sequi vitae, earum, dicta laborum magni ab ducimus, praesentium pariatur quasi eius tenetur quam deleniti aspernatur. Nemo autem aliquid obcaecati, quisquam dolores ipsam ducimus aperiam incidunt esse voluptas in vero. Voluptatem labore animi consequuntur in porro sapiente soluta iusto perferendis provident doloremque, maiores dolores, rerum dignissimos distinctio. Sunt rerum officiis explicabo nobis dolorum expedita modi temporibus quibusdam fugit! Ipsum minus fuga nulla odio fugiat aliquid debitis suscipit quasi, mollitia magnam dolores aut exercitationem praesentium voluptatem neque perferendis accusantium! Tempora id assumenda, necessitatibus cum nemo quae consectetur autem nobis reiciendis ipsam sapiente nisi et velit harum iste esse exercitationem ut! Itaque, vel magni minus quidem earum delectus doloremque voluptatem dolorem odit saepe consectetur! Modi omnis voluptate recusandae commodi, aliquid officia repellendus corporis tenetur dicta rem cumque voluptates id sequi fugit fugiat magni accusamus non atque totam numquam, quae nam repellat? Rem, culpa. Modi excepturi iusto eaque perferendis iure doloremque blanditiis vero non illum accusamus, porro at optio, cupiditate laborum ad a aperiam suscipit consequatur nostrum quos pariatur aliquid quam reprehenderit. Fugiat ad adipisci assumenda, dolorum corrupti ex ab aperiam saepe a enim nesciunt odio dicta vero! Rem, cum modi!</p> -->
+        <section class="etapa-a">
+            <div class="card">
+                <form class="form-a">
+                    <h3>¿Como mido el largo de una cadena de caracteres?</h3>
+                    <div class="input-container">
+                        <label for="op-a">Large</label>
+                        <input type="radio" name="a-a" id="op-a" value="large">
+                    </div>
+                    <div class="input-container">
+                        <label for="op-b">Long</label>
+                        <input type="radio" name="a-a" id="op-b" value="long">
+                    </div>
+                    <div class="input-container">
+                        <label for="op-c">Length</label>
+                        <input type="radio" name="a-a" id="op-c" value="length">
+                    </div>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+            <div class="card">
+                <form ></form>
+            </div>
+            <div class="card">
+                <form ></form>
+            </div>
+        </section>
+    </main>
 
-    <!-- <span class="clase">Hola</span>
-    <span class="clase">Hola</span>
-    <span class="clase">Hola</span>
-    <span class="clase">Hola</span> -->
-
-    <!-- <span id="span">Soy un span</span> -->
-    <!-- <button class="btn" id="btn2" onclick="subir()"> Subir </button> -->
-    
-
-    <div id="div"></div>
-    <button class="btn" id="btn">Toggle</button>
-
+    <footer>
+        <p>todos los derechos reservados</p>
+    </footer>
     <script src="./main.js"></script>
-  </body>
+</body>
 </html>

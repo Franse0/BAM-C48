@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --red:#942B27;
+    --lgreen:#2FE577;
+    --gren:#21A775;
+    --yellow:#C6CB0D;
+    --can:#2C9EB8;
+    --blue:#316EBF;
+    --orange:#E7751C;
+    --magneta:#8D3A92;
+
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    height: 60px;
+    background: black;
+}
+
+nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1300px;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.inicio h1{
+    text-align: center;
+    color: var(--magneta);
+    padding: 2rem 0 0 0;
+}
+
+.inicio-description p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.inicio-description span{
+    color: var(--magneta);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.inicio-description span:nth-child(3){
+    position: relative;
+    left: 96%;
+    top: 5%;
+}
+
+.inicio-container h3{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    /* background: var(--gren); */
+    padding: 1rem 1.5rem;
+    height:45vh;
+}
+
+.hero span {
+    color: var(--blue);
+    font-weight: bold;
+}
+.hero{
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    padding: .6rem 2rem;
+    margin-top: 5%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+    transition: all ease-in-out .3s;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    border-top: 1px solid white;
+    padding:1rem 
+}
+
+.etapa-a{
+    height: 100vh;
+}
+
+form{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+.form-a{
+    display: flex;
+    flex-direction: column;
+}

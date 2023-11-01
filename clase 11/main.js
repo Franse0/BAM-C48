@@ -1,108 +1,80 @@
-// si declare la funcion con function no importa donde ejecute la funcion;
-// saludar();
-
-// Asi delcaro 
-function saludar(){
+// const title = document.getElementById("title");
+// const parrafo  = document.getElementsByClassName(".parrafo");
+// const parrafoTag = document.getElementsByTagName("p");
+// const spanes = document.querySelectorAll(".span");
+const div = document.querySelector(".div");
     
-    alert("Hola")
-    // Aca va ir todo el codigo que querramos ejecutar
-};
-
-// Otra forma de crear funciones;
-const saludar2 =()=>{
-    console.log("Hola dos");
-};
-// Asi ejecuto
-// saludar2();
-
-
-// const h1 = document.querySelector("h1");
-const h1ConClase = document.querySelector(".titulo");
-const h1ConId = document.querySelector("#tituloId");
-// console.log(h1);
-// console.log(h1ConClase);
-// console.log(h1ConId);
-
-
-function cambiarEstiloDelH1(){
-    h1.textContent="Hola ahora soy un h1 pero desde js";
-    h1.style.color="red";
-};
-
-// cambiarEstiloDelH1();
-// const btn = document.querySelector("#btn");
-// console.log(btn)
-
-const span =document.getElementById("span");
-
-// De esta forma no puedo agregar un escuchador de eventos.
-// const span2 = document.getElementsByTagName("span");
-// console.log(span2);
-// span2.addEventListener("click", cambiarEstiloDelH1); 
-// console.log(span);
-
-// span.addEventListener("click", cambiarEstiloDelH1);
-
-// const img = document.getElementById("img");
-// console.log("img")
+// const img = document.createElement("img");
+const h1 = document.createElement("h1");
+h1.textContent="Hola soy un h1 desde Javascript"
+h1.setAttribute("style", "text-align: center; color:gold; text-transform:uppercase;");
 // img.setAttribute("src", "./meme1.jpg");
-// img.setAttribute("width", "100%")
-// img.setAttribute("alt", "Img");
-
-// const h1 = document.getElementById("h1");
-// console.log(h1);
-// h1.textContent="Hola";
-// h1.innerHTML=`hola soy un <span style="color:Red;">H1</span>`;
-
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-// console.log(btn2)
+// img.setAttribute("width", "100%");
+div.appendChild(h1);
+// div.appendChild(img);
 
 
-function bajar (){
-    btn2.scrollIntoView({
-        behavior:"smooth",
-        block:"end"
-    });
-};
+const divNuevo = document.createElement("div");
+// const h2 = document.createElement("h2");
+// h2.setAttribute("style", "color:white; text-align:center;")
+// h2.textContent="Hola a todos como andan?";
+// divNuevo.appendChild(h2)
 
-function subir (){
-    btn1.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-    });
-}
-
-// Es para llamar a mas de un elemento, esto me devuelve una NodeList. Despues tengo que ver que puedo realizar con esa NodeList
-// const spanes = document.querySelectorAll(".clase");
-// console.log(spanes);
-
-const div = document.getElementById("div");
-const p = document.createElement("p");
-p.textContent="Soy un parrafo de puro Js";
-
-div.appendChild(p);
-
-// p.classList.add("p");
-// p.classList.remove("p");
-
-
-// EL toggle lo que hace es, si un elemento tiene una clase la quita, si no la tiene la agrega
-// classList.add se usa para agregar una clase ya definida en Css
-//classList.remove se usa para quitar una clase
-// function toggle (){
-//     p.classList.toggle("p");
-//     console.log("algo")
+// function saludar (){
+//     alert("Aloha")
 // }
 
+// divNuevo.innerHTML=` 
+// <div>
+//     <h4>Lavarropa Dreams</h4>
+//     <p>Este lavarropa cuanta con capacidad pqara cargar 8 kilos</p>
+//     <a src="https://mercadolibre.com">Conoce mas</a>
+//     <br>
+//     <button onClick="saludar()">Comprar</button>
+// </div>
+// `
+
+divNuevo.setAttribute("style", "border:2px solid gold; background:white; text-align: center;");
+// divNuevo.style.background="blue";
+// divNuevo.style.textAlign="center";
+// div.appendChild(divNuevo);
+
+// divNuevo.addEventListener("mouseover", function(){
+//     console.log("Mouseover");
+// });
+
+// function bajar (){
+//     const btn2 = document.getElementById("btn2");
+//     btn2.scrollIntoView({
+//         behavior:"smooth",
+//         block:"start"
+//     })
+// };
+// function subir (){
+//     const  btn1 = document.getElementById("btn1");   
+//     console.log(btn1) 
+//     btn1.scrollIntoView({
+//         behavior:"smooth", 
+//         block:"end"
+//     })
+// };
+let contador = 5
 
 
-const btn = document.getElementById("btn");
-btn.addEventListener("click", function(){
-    p.classList.toggle("p");
-    console.log("algo")
-});
+const span = document.createElement("span");
+span.textContent=contador;
+function incicarContador (){
+    interval= setInterval(function (){
+        contador -=1;
+        console.log(contador);
+        span.textContent=contador;
+        if (contador === 0){
+            clearInterval(interval);
+            span.textContent="Termino tu tiempo";
+        }
+    },1000);
+    divNuevo.appendChild(span);
+    div.appendChild(divNuevo);
+};
 
-
-
-// btn.addEventListener()
+incicarContador();
