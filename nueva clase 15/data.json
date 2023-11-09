@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nombre": "Enero",
+        "categoria": "verano",
+        "imagen": "./assets/imagen_enero.jpg",
+        "actividades": ["Playa y natación", "Senderismo", "Deportes acuáticos"]
+    },
+    {
+        "id": 2,
+        "nombre": "Febrero",
+        "categoria": "verano",
+        "imagen": "./assets/imagen_febrero.jpg",
+        "actividades": ["Playa y natación", "Buceo", "Exploración de islas"]
+    },
+    {
+        "id": 3,
+        "nombre": "Marzo",
+        "categoria": "otoño",
+        "imagen": "./assets/imagen_marzo.jpg",
+        "actividades": ["Ciclismo", "Fiestas locales", "Exploración de ciudades costeras"]
+    },
+    {
+        "id": 4,
+        "nombre": "Abril",
+        "categoria": "otoño",
+        "imagen": "./assets/imagen_abril.jpg",
+        "actividades": ["Senderismo", "Observación de aves", "Visitas a viñedos"]
+    },
+    {
+        "id": 5,
+        "nombre": "Mayo",
+        "categoria": "otoño",
+        "imagen": "./assets/imagen_mayo.jpg",
+        "actividades": ["Turismo cultural", "Degustación de gastronomía local", "Paseos en parques"]
+    },
+    {
+        "id": 6,
+        "nombre": "Junio",
+        "categoria": "invierno",
+        "imagen": "./assets/imagen_junio.jpg",
+        "actividades": ["Esquí", "Snowboard", "Visitas a mercados de invierno"]
+    },
+    {
+        "id": 7,
+        "nombre": "Julio",
+        "categoria": "invierno",
+        "imagen": "./assets/imagen_julio.jpg",
+        "actividades": ["Esquí alpino", "Patinaje sobre hielo", "Relajación en aguas termales"]
+    },
+    {
+        "id": 8,
+        "nombre": "Agosto",
+        "categoria": "invierno",
+        "imagen": "./assets/imagen_agosto.jpg",
+        "actividades": ["Snowshoeing", "Visitas a castillos históricos", "Cerveza caliente"]
+    },
+    {
+        "id": 9,
+        "nombre": "Septiembre",
+        "categoria": "primavera",
+        "imagen": "./assets/imagen_septiembre.jpg",
+        "actividades": ["Observación de flores silvestres", "Caminatas primaverales", "Visitas a jardines botánicos"]
+    },
+    {
+        "id": 10,
+        "nombre": "Octubre",
+        "categoria": "primavera",
+        "imagen": "./assets/imagen_octubre.jpg",
+        "actividades": ["Exploración de rutas escénicas", "Fotografía de paisajes", "Excursiones en bicicleta"]
+    },
+    {
+        "id": 11,
+        "nombre": "Noviembre",
+        "categoria": "primavera",
+        "imagen": "./assets/imagen_noviembre.jpg",
+        "actividades": ["Visitas a festivales locales", "Exploración de parques naturales", "Degustación de vinos"]
+    },
+    {
+        "id": 12,
+        "nombre": "Diciembre",
+        "categoria": "verano",
+        "imagen": "./assets/imagen_diciembre.jpg",
+        "actividades": ["Playa y natación", "Asados al aire libre", "Fiestas de fin de año"]
+    }
+]
